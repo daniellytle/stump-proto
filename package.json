@@ -1,0 +1,43 @@
+{
+  "name": "gottado",
+  "description": "Color Task Web App",
+  "author": "daniellytle",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/daniellytle/gottado.git"
+  },
+  "dependencies": {
+    "body-parser": "1.3.0",
+    "cookie-parser": "latest",
+    "express": "latest",
+    "express-session": "latest",
+    "jade": "1.3.1",
+    "mongodb": "1.4.28",
+    "mongoose": "3.8.12",
+    "mongoose-findorcreate": "^0.1.2",
+    "passport": "latest",
+    "passport-facebook": "latest",
+    "stylus": "^0.49.3"
+  },
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-browserify": "latest",
+    "grunt-concurrent": "latest",
+    "grunt-contrib-jade": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-stylus": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-nodemon": "latest",
+    "grunt-shell": "latest"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "bugs": {
+    "url": "https://github.com/daniellytle/gottado/issues"
+  },
+  "homepage": "http://gottado.herokuapp.com",
+  "version": "1.0.0",
+  "main": "gruntfile.js"
+}

@@ -1,0 +1,387 @@
+StumpGreen = #27ae60
+
+body
+	padding 0
+	margin 0
+	font-family 'Open Sans'
+	overflow-x hidden
+	background #ebebeb
+
+a
+	color inherit
+
+.inner
+	display table-cell
+	vertical-align middle
+
+.header
+	display table
+	height 700px
+	width 100%
+	color lightred
+	position relative
+	background white
+
+.sub
+	font-family 'Open Sans'
+	text-align center
+	font-weight 300
+	font-size 50px
+	color white
+	position absolute
+	bottom 25px
+	width 100%
+
+.holdNav
+	width 40%
+	position absolute
+	padding 8px
+	left 30%
+	right 30%
+
+#topNav
+	border-bottom 1px solid lightred
+	top 15px
+
+#bottomNav
+	border-top 1px solid lightred
+	bottom 15px
+
+.nav
+	width 25%
+	text-align center
+	color lightred
+	font-weight 700
+	font-size 17px
+	float left
+
+.top
+	top 10px
+	text-align middle
+	width 100%
+	position absolute
+
+.titleHolder
+	display table-cell
+	vertical-align middle
+	text-align center
+
+.title
+	height 65px
+
+.subtitle
+	padding 20px
+	font-size 20px
+
+.begin
+	padding 9px 27px
+	border-radius 2px
+	font-weight 700
+	font-family 'Open Sans'
+	text-transform uppercase
+	display inline-block
+	color lightred
+	cursor pointer
+	border 1px solid lightred
+
+
+.begin:hover {
+	color white
+	background lightred
+}
+
+.topBar
+	padding 10px 0
+	height 40px
+	background StumpGreen
+	color white
+	font-weight 700
+	right 0px
+	border-bottom 1px solid #d9d9d9
+	
+.leftPane
+	background #F9F9F9
+	position absolute
+	top 60px
+	left 0
+	bottom 0
+	width 400px
+	
+.map 
+	position absolute
+	top 60px
+	bottom 0
+	right 0
+	left 400px
+
+#profPic {
+	float right
+	margin-right 20px
+	border-radius 100%
+	height:100%
+}
+
+#lo {
+	background: url("/img/Icon.png") center no-repeat;
+	height: 40px;
+	background-size: contain;
+}
+
+.pic
+	padding:5px;
+	height:100%;
+
+.logo {
+	float left
+	height 100%
+	display inline-block
+	font-family 'Pacifico'
+	font-size 25px
+	margin-left 20px
+	font-weight 700
+	display table
+}
+
+.newHolder
+	width 700px
+	margin 0 auto
+	background #F9F9F9
+	position relative
+	margin-bottom 40px
+	@media screen and (max-width: 800px)
+		width 90%
+
+
+.newTop {
+	padding:11px 20px
+	margin-right: 200px
+	border-right 1px solid lightg
+	font-family 'Open Sans'
+	border-right none
+	border-radius 2px 0 0 2px
+	border-bottom 3px solid #CECECE
+	cursor edit
+}
+
+input {
+	width 100%
+	border none
+	background transparent
+	outline none
+	font-size 17px
+}
+
+#task {
+	color: #747474;
+	font-weight: 700;
+}
+
+#dateHolder
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 100;
+	background: white;
+	width: 100px;
+	cursor pointer
+	padding:5px 0;
+	border-bottom 3px solid #DDDDDD
+
+#dateHolder:hover
+	border-bottom 2px solid #DDDDDD
+	margin-top 1px
+
+#dateAdpt
+	height 100%
+	width 100%
+	display table
+	text-align center
+
+#datepicker
+	background url("http://daniellytle.github.io/Images/cal.png") center no-repeat
+	background-size contain
+	display table-cell
+	vertical-align middle
+	height 100%
+	color #777
+	font-weight 700
+	cursor pointer
+
+#goButton
+	cursor pointer
+	font-size:100%;
+	width 100px
+	top: 0;
+	bottom: 0;
+	right: 0;
+	text-align center
+	background: lightgreen;
+	position: absolute;
+	color white
+	padding 7px 0
+	border-bottom 3px solid #29B363
+	border-radius 0 3px 3px 0
+	transition .2s ease
+
+#goButton:hover {
+	background actgreen
+	border-bottom 2px solid #29B363
+	margin-top 1px
+}
+
+#goImg
+	height 100%
+	text-align center
+	font-size 31px
+	line-height 31px
+	font-weight 700
+
+
+.name {
+	float right
+	display table
+	height 100%
+	margin-right 20px
+}
+
+.logout {
+	float right
+	display table
+	height 100%
+	margin-right 20px
+	border: 1px solid lightred;
+	border-radius: 3px;
+	padding 0 11px
+	transition .2s ease
+}
+
+.logout:hover {
+	background lightred
+	color white
+}
+
+.todH
+	width:70%;
+	margin 0 auto
+	max-width 1300px
+	display table
+
+.check
+	position: absolute;
+	top: 0;
+	left: 100%;
+	width: 100px;
+	height: 43px;
+	text-align center
+	background lightgreen
+
+.todos
+	-webkit-column-count: 4;
+	-webkit-column-fill: auto;
+	-webkit-column-gap 10
+	-moz-column-count: 4;
+	-moz-column-fill: auto;
+	column-count: 4;
+	column-fill: auto;
+	-moz-column-break-inside:avoid;
+	-webkit-column-break-inside:avoid;
+	column-break-inside:avoid;
+	@media screen and (max-width: 1000px)
+		-webkit-column-count: 3;
+		-moz-column-count: 3;
+		column-count: 3;
+	@media screen and (max-width: 800px)
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+		column-count: 2;
+	@media screen and (max-width: 600px)
+		-webkit-column-count: 1;
+		-moz-column-count: 1;
+		column-count: 1;
+
+.tOut
+	width 90%
+	float left
+	margin-left 0
+	display inline-flex
+	border-radius 2px
+	-webkit-column-break-inside: avoid;
+	-moz-column-break-inside: avoid;
+	column-break-inside: avoid;
+	border 1px solid
+	background #FBFBFB
+	color #747474
+	position relative
+	-webkit-transition: all .2s ease;
+	-moz-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s ease;
+	margin:0 auto 20px auto
+	margin-left 0
+	border-bottom: 3px solid #e1e1e1
+	cursor pointer
+	-webkit-box-shadow 0px 3px 3px 0 #CDCDCD
+	@media screen and (max-width: 400px)
+		width 100%
+
+.tOut:hover
+	margin-left 10px
+
+.todo
+	transition .5s ease
+	word-wrap break-word
+	font-weight 700
+	margin 10px
+	margin-right 100px
+
+.hidden
+	background red
+	display none
+
+
+.maybe
+	color #e1e1e1
+	border-color:#e1e1e1
+
+.urgent
+	border-color: #D26E6E;
+
+.urgPic
+	background #FF8C85
+
+
+.mild
+	border-color: #DFDF67;
+
+.mildPic
+	background #FFFF6A
+
+.fine
+	border-color: #27B262;
+	// background: rgb(46, 204, 113);
+	//color: white;
+
+.finePic
+	background #54D98D
+
+.status
+	width 40px
+	position: absolute;
+	right: 40px;
+	top: 0;
+	padding 10px
+	text-align center
+	font-weight 700
+
+.icon
+	width 40px
+	position absolute
+	right 0
+	top 0
+	height 100%
+	
+.empty
+	background warnred
+
+.bump
+	margin-left 20px;

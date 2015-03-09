@@ -1,0 +1,29 @@
+head
+	link(rel="icon", type="image/png", href="")
+	title Stump
+	link(rel='stylesheet', href='/css/app.min.css')
+	link(rel='stylesheet', href='/css/pikaday.css')
+	link(href='http://fonts.googleapis.com/css?family=Pacifico|Open+Sans:300,400,700', rel='stylesheet', type='text/css')
+
+body
+	.middleLogo
+	.topBar 
+		img(src='#{user.pic}' id='profPic')
+		.name 
+			.inner #{user.name} 
+		a(href='/logout')
+			.logout 
+				.inner Logout
+		.logo 
+			.inner#lo
+	.leftPane
+
+	.map
+		iframe(width='100%', height='100%', frameBorder='0', src='https://a.tiles.mapbox.com/v4/wilsoda.ldchemjp/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1Ijoid2lsc29kYSIsImEiOiJJdDNSbEZBIn0.t6PuqsbKkcsJsJO7wd17Lg')
+
+script.
+	var data = !{JSON.stringify(user)};
+script(type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
+script(type='text/javascript' src='/js/moment.js')
+script(type='text/javascript' src='/js/pikaday.js')
+script(type='text/javascript' src='/js/app.min.js')
